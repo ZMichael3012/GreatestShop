@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="{% static 'market/css/styles.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="header_wrapper">
+        <header class="theme_header">
+            <div class="header_desktop">
+                <div class="header_desktop_upper">
+                Menu
+                </div>
+                <div class="header_desktop_lower">
+
+                </div>
+            </div>
+            <div class="slideshow">
+            </div>
+        </header>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+<div id="shopify-section-footer" class="shopify-section">
+
+</div>
+
+</body>
+</html>

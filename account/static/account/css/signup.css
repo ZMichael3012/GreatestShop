@@ -1,0 +1,23 @@
+.account{
+    position: absolute;
+    max-width: 1160px;
+    margin: 40px auto;
+}
+
+.account .col{
+    display: inline-block;
+    width: 45%;
+}
+
+.center{
+    text-align: center;
+}
+
+section{
+    display: block;
+}
+
+h1.theme{
+    text-align: center;
+    position: relative;
+}

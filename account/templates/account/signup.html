@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main-content">
+        <section id="Register" class="center account">
+            <section class="col">
+                <h1 class="theme">Create Account</h1>
+                <p>
+                    Already have an account?
+                    <span class="text-link"><a href="{% url 'login' %}">Sign in here</a></span>.
+                </p>
+                <form action="{% url 'signup' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Register</button>
+                    <br><br>
+                    <a class href="{% url 'homepage' %}">Home</a>
+
+                    <div>{{ form.non_field_errors }}</div>
+                </form>
+            </section>
+        </section>
+    </main>
+{% endblock %}
