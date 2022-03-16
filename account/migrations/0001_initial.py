@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('account', '0001_initial'),
+        ('market', '0001_initial'),
     ]
 
     operations = [
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField()),
                 ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='account.order')),
-                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='account.product')),
+                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='market.product')),
             ],
         ),
     ]

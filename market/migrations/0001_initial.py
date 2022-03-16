@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('price', models.IntegerField()),
                 ('gender', models.CharField(choices=[('M', 'Man'), ('F', 'Woman'), ('N', 'None')], max_length=1)),
                 ('category', models.CharField(choices=[('Hoodie', 'Hoodie'), ('Accessories', 'Accessories'), ('Pants', 'Pants')], max_length=15)),
-                ('brand', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='account.brand')),
+                ('brand', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='market.brand')),
             ],
         ),
     ]
